@@ -110,3 +110,13 @@ Once the raw JSON was secured, a Python pipeline was deployed to clean, enrich, 
 * **Filtering for the UNOC 2025 List:** To view only the highly curated list of commitments compiled for the recent conference, filter the `in_markdown_doc` column to `True`.
 * **Analyzing Duplicates:** If `has_duplicate_title` is `True`, check the `entity` column. Often, this indicates multiple organizations signing onto a single global initiative (e.g., "UN Global Compact Sustainable Ocean Principles").
 * **Target Summation:** Because the targets, basins, and SDGs are one-hot encoded in the Excel file, you can easily find the total number of commitments addressing a specific area by simply summing the respective column.
+
+---
+
+## Missing Records
+* As of the date of scraping the site (March 26, 2026) the website indicates 2664 records. While the dataset indicated 2650 raw html pages retreived. This missing 14 records is most likely due to the fact that the site generates ghost cards as seen in the screenshots below.
+
+
+![Alt text](images/ghost_cards_1.png)
+
+![Alt text](images/ghost_cards_2.png)
