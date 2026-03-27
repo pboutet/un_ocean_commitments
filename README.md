@@ -51,7 +51,7 @@ A dedicated script was used to extract complex, highly-variable fields (like vis
 
 ## 🛠️ Part 2: Data Enrichment & Formatting
 
-Once the raw JSON was secured, a Python pipeline was deployed to clean, enrich, and format the data for enterprise analysis.
+Once the raw JSON was secured, a Python pipeline was deployed to clean, enrich, and format the data for analysis.
 
 ### Phase 5: Markdown Cross-Referencing
 * The raw JSON data was cross-referenced against a compiled Markdown document of priority UNOC 2025 commitments.
