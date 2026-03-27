@@ -14,6 +14,7 @@ The primary goal of this project was to capture the complete volatile UN databas
 ### Final Data Outputs
 * **`final_ocean_commitments_encoded.xlsx`**: The master Excel dataset. (Use this for Excel/Tableau/PowerBI analysis; features one-hot encoded indicator columns).
 * **`final_ocean_commitments_enriched_MDtagged_languageTagged_dupsTagged.json`**: The master JSON dataset. (Use this for programmatic access; contains native nested arrays instead of one-hot encoded columns).
+* **`Compiled VC list since UNOC 2022_20250904.docx.md`**: Compiled Markdown document of priority UNOC 2025 commitments. 
 
 ### Local Archives & Scripts
 * **`local_html_archive/`**: Directory containing 2,650 raw HTML files. Files are named using the URL slug and an MD5 hash (e.g., `commitment-name_a1b2c3d4e5.html`) to protect against UN server outages.
@@ -109,7 +110,3 @@ Once the raw JSON was secured, a Python pipeline was deployed to clean, enrich, 
 * **Filtering for the UNOC 2025 List:** To view only the highly curated list of commitments compiled for the recent conference, filter the `in_markdown_doc` column to `True`.
 * **Analyzing Duplicates:** If `has_duplicate_title` is `True`, check the `entity` column. Often, this indicates multiple organizations signing onto a single global initiative (e.g., "UN Global Compact Sustainable Ocean Principles").
 * **Target Summation:** Because the targets, basins, and SDGs are one-hot encoded in the Excel file, you can easily find the total number of commitments addressing a specific area by simply summing the respective column.
-
-***
-
-Would you like me to make any adjustments to this documentation, or is there another part of your pipeline you want to tackle next?
